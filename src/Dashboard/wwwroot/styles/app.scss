@@ -1,0 +1,146 @@
+﻿@import 'variables.scss';
+@import 'offCanvas.scss';
+@import 'dropdowns.scss';
+@import 'cards.scss';
+@import 'amCharts.scss';
+@import 'widgets.scss';
+@import 'breadcrumbs.scss';
+@import 'buttons.scss';
+@import 'badges.scss';
+
+html, body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: $font-size-body;
+    font-weight: $font-weight-regular;
+}
+
+[data-bs-theme=dark] {
+    main {
+        background-color: $slat-d5;
+    }
+}
+
+[data-bs-theme=light] {
+    main {
+        background-color: $slat-l4;
+    }
+}
+
+
+a, .btn-link {
+    color: $azur-b0;
+}
+
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem $azur-b0;
+    }
+
+.content {
+    padding-top: 0.75rem;
+}
+
+h1:focus {
+    outline: none;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid $emer-b0;
+}
+
+.invalid {
+    outline: 1px solid $crim-b0;
+}
+
+.validation-message {
+    color: $crim-b0;
+}
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
+    padding: 1rem 1rem 1rem 3.7rem;
+    color: white;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+
+.darker-border-checkbox.form-check-input {
+    border-color: $navy-b0;
+}
+
+html::content .essb-fans-twitter, ::content .essb-fans-youtube, ::content .essb-mobile-sharepoint, ::content .essb_bottombar, ::content .essb_item, ::content .essb_link_pinterest, ::content .essb_link_twitter, ::content .essb_links_list, ::content .essb_share, ::content .essbfc-container, ::content .essbfc-facebook, ::content .essbfc-instagram, ::content .essbis-hover-overlay, ::content .et-social-google-plus, ::content .et-social-icon, ::content .et-social-icons, ::content .et_social_facebook, ::content .et_social_flyin, ::content .et_social_follow, ::content .et_social_icons_container, ::content .et_social_inline, ::content .et_social_networks, ::content .et_social_pinterest, ::content .et_social_popup, ::content .et_social_sidebar_networks, ::content .et_social_twitter, ::content .etsocialmediahyperlink, ::content .event-share-center, ::content .event-social-box, ::content .eventShare, ::content .ew-social-icons, ::content .expand-share, ::content .expanded_story_socialmedia, ::content .extra-social, ::content .extra-social-links, ::content .extreme-share, ::content .eyebrow-share-widget, ::content .f-social, ::content .f-social-link, ::content .fBsocial, ::content .fButtonLarge, ::content .f_social, ::content .fa-facebook, ::content .fa-facebook-f, ::content .fa-facebook-square, ::content .fa-fb, ::content .fa-flickr, ::content .fa-google, ::content .fa-google-plus, ::content .fa-google-plus-square, ::content .fa-instagram, ::content .fa-linkedin, ::content .fa-linkedin-square, ::content .fa-pinterest, ::content .fa-pinterest-p, ::content .fa-pinterest-square, ::content .fa-reddit, ::content .fa-reddit-square, ::content .fa-share-alt, ::content .fa-share-square-o, ::content .fa-soundcloud, ::content .fa-tumblr, ::content .fa-tumblr-square, ::content .fa-twit, ::content .fa-twitter, ::content .fa-twitter-square, ::content .fa-vine, ::content .fa-youtube, ::content .fa-youtube-play, ::content .fa-youtube-square, ::content .faceBookButton, ::content .faceBookShareContainer, ::content .facebook-24x24, ::content .facebook-activity, ::content .facebook-badge, ::content .facebook-banner, ::content .facebook-banner-wrapper, ::content .facebook-bar, ::content .facebook-big-share, ::content .facebook-block, ::content .facebook-box, ::content .facebook-box-widget, ::content .facebook-broadcasting-widget, ::content .facebook-btn, ::content .facebook-button, ::content .facebook-button-link, ::content .facebook-circle, ::content .facebook-connect-dialog, ::content .facebook-container, ::content .facebook-count-single, ::content .facebook-facepile, ::content .facebook-fans, ::content .facebook-flyout, ::content .facebook-follow, ::content .facebook-follow-button, ::content .facebook-footer, ::content .facebook-ft, ::content .facebook-hover-horizontal, ::content .facebook-icon, ::content .facebook-icon-small, ::content .facebook-image, ::content .facebook-inner, ::content .facebook-like, ::content .facebook-like-bottom, ::content .facebook-like-box, ::content .facebook-like-button-head, ::content .facebook-like-large, ::content .facebook-like-message-holder, ::content .facebook-likebox, ::content .facebook-likebox-promo, ::content .facebook-link, ::content .facebook-menu, ::content .facebook-modal, ::content .facebook-module, ::content .facebook-p, ::content .facebook-recommend, ::content .facebook-right-rail, ::content .facebook-row, ::content .facebook-section, ::content .facebook-share, ::content .facebook-share-bottom, ::content .facebook-share-btn, ::content .facebook-share-button, ::content .facebook-share-link, ::content .facebook-share-story, ::content .facebook-sharer, ::content .facebook-sharetool, ::content .facebook-sidebar, ::content .facebook-sidebar-outer, ::content .facebook-social, ::content .facebook-social-likes, ::content .facebook-top, ::content .facebook-top-button, ::content .facebook-twitter, ::content .facebook-twitter-share, ::content .facebook-twitter-wrap, ::content .facebook-widget, ::content .facebook.icon, ::content .facebook2, ::content .facebookActivity, ::content .facebookBloc_png, ::content .facebookBox, ::content .facebookBtn, ::content .facebookButtonDiv, ::content .facebookConnect, ::content .facebookContainer, ::content .facebookCountDiv, ::content .facebookFanBox, ::content .facebookFeed, ::content .facebookFrame, ::content .facebookGroup, ::content .facebookHomepageBottom, ::content .facebookIcon, ::content .facebookImage, ::content .facebookItem, ::content .facebookLike, ::content .facebookLikeBox, ::content .facebookLikeboxContentContainer, ::content .facebookLink, ::content .facebookOptions, ::content .facebookOuter, ::content .facebookRec, ::content .facebookRecentActivity, ::content .facebookRecommend, ::content .facebookRecommendation, ::content .facebookShare, ::content .facebookShareAlert, ::content .facebookShareIcon, ::content .facebookShareToolsContainer, ::content .facebookSharer, ::content .facebookSite, ::content .facebookSocialIcon, ::content .facebookTwitterIcons, ::content .facebookWidgetry, ::content .facebookWrapperModule, ::content .facebook_24, ::content .facebook_activity, ::content .facebook_badge, ::content .facebook_block, ::content .facebook_box, ::content .facebook_box_sidebar, ::content .facebook_btn, ::content .facebook_button, ::content .facebook_button_bg, ::content .facebook_cont, ::content .facebook_fanbox, ::content .facebook_follower, ::content .facebook_icn, ::content .facebook_icon, ::content .facebook_image, ::content .facebook_indiv_widget, ::content .facebook_large, ::content .facebook_like, ::content .facebook_like_box, ::content .facebook_logo, ::content .facebook_net, ::content .facebook_new, ::content .facebook_plugin_container, ::content .facebook_plugin_parent_block, ::content .facebook_pop {
+    display: none;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.loadScreen {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+
+.mud-wasm {
+    animation: slide 1s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, $navy-b0 50%, $navy-d5 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.mud-wasm-cont {
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bg-info {
+    background-color: $teal-b0;
+}
+
+.bg-warning {
+    background-color: $ambe-b0;
+}
+
+.bg-danger {
+    background-color: $crim-b0;
+}
+
+.bg-primary {
+    background-color: $navy-b0;
+}
+
+.text-info {
+    color: $teal-b0;
+}
+
+.text-warning {
+    color: $ambe-b0;
+}
+
+.text-danger {
+    color: $crim-b0;
+}
+
+.text-primary {
+    color: $navy-b0;
+}

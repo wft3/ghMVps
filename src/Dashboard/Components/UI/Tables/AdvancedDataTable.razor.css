@@ -1,0 +1,7 @@
+﻿.advanced-data-table th.sortable:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.advanced-data-table th.sorted {
+    background-color: rgba(13,110,253, 0.1);
+}

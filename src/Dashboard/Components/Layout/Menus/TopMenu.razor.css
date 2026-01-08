@@ -1,0 +1,25 @@
+﻿.top-row {
+    border-width: 2px 2px 2px 0;
+    height: 3.5rem;
+    align-items: center;
+    border-top-right-radius: 10px;
+    font-size: 1rem;
+}
+
+    .top-row ::deep .nav-item {
+        margin-left: 1.5rem;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+        .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+            text-decoration: underline;
+        }
+
+        .top-row ::deep a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }

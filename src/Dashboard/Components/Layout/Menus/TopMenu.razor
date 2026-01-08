@@ -1,0 +1,74 @@
+﻿<div class="top-row">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                <div class="form-inline">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary">
+                            <i class="fa fa-moon-starts"></i>
+                        </button>
+                        @* <button class="btn" aria-current="page" @onclick="@(() => ToggleTheme())">
+                            @if (colorService.GetColorMode("User1").Equals("light", StringComparison.InvariantCultureIgnoreCase))
+                            {
+                                <i class="fa-doutone fa fa-moon-stars fa-2x"></i>
+                            }
+                            else
+                            {
+                                <i class="fa-doutone fa fa-sun-bright fa-2x"></i>
+                            }
+                        </button> *@
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fa-duotone fa fa-file-chart-pie me-2"></i> Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fa-duotone fa fa-bell me-2"></i>Exports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fa-duotone fa fa-download me-2"></i> Alerts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/help">
+                            <i class="fa-sharp fa fa-circle-question"></i> Help
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Milligan, Joshua (WFT3) <img src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&bold=true&rounded=true&uppercase=true&format=svg&font-size=0.33&size=24" />
+                        </a>
+                        <ul class="dropdown-menu multi-level">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">User Roles</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">MVPS Support Manager</a></li>
+                                    <li><a class="dropdown-item" href="#">MVPS User Support Manager</a></li>
+                                    <li><a class="dropdown-item" href="#">CDC Program Data Manager</a></li>
+                                    <li><a class="dropdown-item" href="#">CDC Program User</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Access & Permissions</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+@code {
+
+}

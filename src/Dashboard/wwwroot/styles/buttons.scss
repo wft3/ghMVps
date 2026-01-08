@@ -1,0 +1,177 @@
+﻿@import "variables.scss";
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: $font-weight-medium;
+}
+
+.btn-primary {
+    background-color: $navy-b0;
+    border: solid $navy-d1;
+
+    &:hover {
+        background-color: $navy-l4;
+        border: solid $navy-b0;
+        color: $navy-l5;
+    }
+}
+
+.btn-outline-primary {
+    border: solid $navy-d1;
+    color: $navy-b0;
+
+    &:hover {
+        background-color: $navy-l4;
+        border: solid $navy-b0;
+        color: $navy-l5;
+    }
+}
+
+.btn-warning {
+    background-color: $ambe-b0;
+    border: solid $ambe-d1;
+    color: white;
+
+    &:hover {
+        background-color: $ambe-l4;
+        border: solid $ambe-b0;
+        color: $ambe-l5;
+    }
+}
+
+.btn-outline-warning {
+    border: solid $ambe-d1;
+    color: $ambe-b0;
+
+    &:hover {
+        background-color: $ambe-l4;
+        border: solid $ambe-b0;
+        color: $ambe-l5;
+    }
+}
+
+.btn-success {
+    background-color: $emer-b0;
+    border: solid $emer-d1;
+    color: white;
+
+    &:hover {
+        background-color: $emer-l4;
+        border: solid $emer-b0;
+        color: $emer-l5;
+    }
+}
+
+.btn-outline-success {
+    border: solid $emer-d1;
+    color: $emer-b0;
+
+    &:hover {
+        background-color: $emer-l4;
+        border: solid $emer-b0;
+        color: $emer-l5;
+    }
+}
+
+.btn-danger {
+    background-color: $crim-b0;
+    border: solid $crim-d1;
+    color: white;
+
+    &:hover {
+        background-color: $crim-l4;
+        border: solid $crim-b0;
+        color: $crim-l5;
+    }
+}
+.btn.disabled {
+    background-color: $slat-l2;
+    border: solid $slat-b0;
+    color: $slat-b0;
+
+    &:hover {
+        background-color: $slat-l4;
+        border: solid $slat-b0;
+        color: $slat-b0;
+    }
+}
+.btn-outline-danger {
+    border: solid $crim-d1;
+    color: $crim-b0;
+
+    &:hover {
+        background-color: $crim-l4;
+        border: solid $crim-b0;
+        color: $crim-l5;
+    }
+}
+
+.btn-info {
+    background-color: $azur-b0;
+    border: solid $azur-d1;
+    color: white;
+
+    &:hover {
+        background-color: $azur-l4;
+        border: solid $azur-b0;
+        color: $azur-l5;
+    }
+}
+
+.btn-outline-info {
+    border: solid $azur-d1;
+    color: $azur-b0;
+
+    &:hover {
+        background-color: $azur-l4;
+        border: solid $azur-b0;
+        color: $azur-l5;
+    }
+}
+
+.btn-secondary {
+    background-color: $slat-b0;
+    border: solid $slat-d1;
+    color: white;
+
+    &:hover {
+        background-color: $slat-l4;
+        border: solid $slat-b0;
+        color: $slat-l5;
+    }
+}
+
+.btn-outline-secondary {
+    border: solid $slat-d1;
+    color: $slat-b0;
+
+    &:hover {
+        background-color: $slat-l4;
+        border: solid $slat-b0;
+        color: $slat-l5;
+    }
+}
+
+.btn-light {
+    background-color: $slat-l1;
+    border: solid $slat-b0;
+    color: white;
+
+    &:hover {
+        background-color: $slat-l5;
+        border: solid $slat-l1;
+        color: black;
+    }
+}
+
+.btn-outline-light {
+    border: solid $slat-l1;
+    color: $slat-l2;
+
+    &:hover {
+        background-color: $slat-l5;
+        border: solid $slat-l2;
+        color: $slat-l5;
+    }
+}

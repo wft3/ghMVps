@@ -1,0 +1,52 @@
+﻿
+<div class="my-4">
+    @switch (ImgSrc)
+    {
+        case "AlertWarning":
+            <AlertWarning></AlertWarning>
+            break;
+        case "NoResults":
+            <NoResults></NoResults>
+            break;
+        case "SearchProcessing":
+            <SearchProcessing></SearchProcessing>
+            break;
+        case "SearchResults":
+            <SearchResults></SearchResults>
+            break;
+        case "StartExport":
+            <StartExport></StartExport>
+            break;
+        case "UploadBatch":
+            <UploadBatch></UploadBatch>
+            break;
+        case "CDCLogo":
+            <CDCLogo></CDCLogo>
+            break;
+        case "Unlock":
+            <Unlock></Unlock>
+            break;
+        case "UploaderProcessing":
+            <UploaderProcessing></UploaderProcessing>
+            break;
+        case "UploaderReview":
+            <UploaderReview></UploaderReview>
+            break;
+        default:
+            break;
+    }
+</div>
+<div>
+    <h5 class="text-center my-1">@HeadingText</h5>
+    <p class="text-center">@HeadingDescription</p>
+</div>
+@code {
+    [Parameter]
+    public string HeadingText { get; set; } = string.Empty;
+    [Parameter]
+    public string ImgSrc { get; set; } = string.Empty;
+    [Parameter]
+    public string HeadingDescription { get; set; } = string.Empty;
+    [Parameter]
+    public string ImgAltText { get; set; } = string.Empty;
+}

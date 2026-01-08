@@ -1,0 +1,16 @@
+﻿@inherits InputBase<bool>
+    <div class="d-flex align-items-center">
+        <label>
+            <span class="icon-checkbox" @onclick="ToggleValue" role="button" tabindex="0" @onkeypress="HandleKeyPress">
+                @if (CurrentValue)
+                {
+                    <i class="fa fa-eye" aria-hidden="true" title="Click to be visible"></i>
+                }
+                else
+                {
+                    <i class="fa fa-eye-slash" aria-hidden="true" title="Click to be hidden"></i>
+                }
+            </span>
+            @Label
+        </label>
+    </div>

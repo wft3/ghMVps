@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="251px" height="221px" viewBox="0 0 251 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img-no-results</title>
+    <defs>
+        <rect id="path-1" x="0.1764" y="0.1764" width="243.85536" height="166.5216" rx="7.056"></rect>
+        <filter x="-2.1%" y="-2.4%" width="104.1%" height="106.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.465733986   0 0 0 0 0.464665429   0 0 0 0 0.485450634  0 0 0 0.496175699 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="243.85536" height="10.838016"></rect>
+        <rect id="path-5" x="0" y="0" width="25.909632" height="6.096384" rx="0.508032"></rect>
+        <path d="M83.9775141,36.0074953 L59.9925047,36.0074953 L59.9925047,12.0224859 C59.9925047,5.42660837 54.5958776,0.0299812617 48,0.0299812617 C41.4041224,0.0299812617 36.0074953,5.42660837 36.0074953,12.0224859 L36.0074953,36.0074953 L12.0224859,36.0074953 C5.42660837,36.0074953 0.0299812611,41.4041224 0.0299812611,48 C0.0299812611,54.5958776 5.42660837,59.9925047 12.0224859,59.9925047 L36.0074953,59.9925047 L36.0074953,83.9775141 C36.0074953,90.5733916 41.4041224,95.9700187 48,95.9700187 C54.5958776,95.9700187 59.9925047,90.5733916 59.9925047,83.9775141 L59.9925047,59.9925047 L83.9775141,59.9925047 C90.5733916,59.9925047 95.9700187,54.5958776 95.9700187,48 C95.9700187,41.4041224 90.5733916,36.0074953 83.9775141,36.0074953 Z" id="path-7"></path>
+        <path d="M86.3176591,33.3299637 L60.1245503,33.3299637 C60.1245503,30.4433212 60.1245503,29 60.1245503,29 C48.264981,36.4833403 42.361653,46.6303047 42.4145661,59.4408932 C42.5998247,67.6017741 44.6372297,74.3756251 48.526781,79.7624461 C52.4163323,85.1492672 56.2086668,88.5617851 59.9037846,90 L60.1245503,59.5714068 L86.3176591,59.5714068 C93.5207641,59.5714068 99.4142136,53.6670821 99.4142136,46.4506852 C99.4142136,39.2342884 93.5207641,33.3299637 86.3176591,33.3299637 Z" id="path-9"></path>
+        <linearGradient x1="44.6946982%" y1="29.0132986%" x2="65.3593313%" y2="61.5906241%" id="linearGradient-11">
+            <stop stop-color="#ECC961" offset="0%"></stop>
+            <stop stop-color="#D49932" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="views" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="alert-builder-empty-alerts-4" transform="translate(-815.000000, -394.000000)">
+            <g id="img-no-results" transform="translate(818.000000, 394.000000)">
+                <text id="Type-something" font-family="HelveticaNeue, Helvetica Neue" font-size="12" font-weight="normal" fill="#373A3C">
+                    <tspan x="72.652" y="162">Type something</tspan>
+                </text>
+                <g id="Group-7">
+                    <g id="Group-14">
+                        <circle id="Oval" fill="#E6E8ED" cx="122.5" cy="110.5" r="110.5"></circle>
+                        <g id="Group-13" transform="translate(0.000000, 27.000000)">
+                            <g id="Rectangle">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="Group-3" transform="translate(0.176400, 0.176400)">
+                                <g id="Group">
+                                    <g id="Group-2">
+                                        <mask id="mask-4" fill="white">
+                                            <use xlink:href="#path-3"></use>
+                                        </mask>
+                                        <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-3"></use>
+                                        <g id="UI/Color/Flat/Icon-Color" mask="url(#mask-4)" fill="#D8D8D8">
+                                            <g transform="translate(-0.169344, 10.668672)" id="Base">
+                                                <rect x="0" y="0" width="243.85536" height="1"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <rect id="Rectangle" fill="#CCCCCC" x="11.515392" y="3.63073536" width="20.998656" height="1.19218176" rx="0.59609088"></rect>
+                                    <rect id="Rectangle-Copy" fill="#CCCCCC" x="11.515392" y="6.01509888" width="16.426368" height="1.19218176" rx="0.59609088"></rect>
+                                    <circle id="Oval" fill="#CCCCCC" cx="6.77376" cy="5.419008" r="2.709504"></circle>
+                                </g>
+                                <g id="Group-19" transform="translate(9.966528, 25.417664)" opacity="0.495140439">
+                                    <g id="table-/-heading" transform="translate(0.857072, 0.405936)">
+                                        <g id="table-heading" stroke-width="1" fill="#FFFFFF">
+                                            <polygon id="Rectangle-145" points="0 0 224 0 224 9 0 9"></polygon>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 115.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 125.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 105.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 96.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 86.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 77.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 67.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 58.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 48.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 39.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 29.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 29.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 20.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="table-/-row" transform="translate(0.857072, 10.405936)">
+                                        <g id="table-row" stroke-width="1" fill="#FFFFFF">
+                                            <rect id="Rectangle-145-Copy" x="0" y="0" width="224" height="9"></rect>
+                                        </g>
+                                        <g id="UI/Color/Flat/Icon-Color" transform="translate(0.000000, 8.839286)" fill="#D8D8D8">
+                                            <rect id="Base" x="0" y="0" width="224" height="1"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="btn_primary" transform="translate(212.526720, 17.611776)">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <use id="Rectangle-28" fill="#E9E8E7" xlink:href="#path-5"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icon-/-add" opacity="0.399042039" transform="translate(123.000000, 121.000000) rotate(45.000000) translate(-123.000000, -121.000000) translate(75.000000, 73.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="add" fill="#75A2B2" fill-rule="nonzero" opacity="0.485328311" xlink:href="#path-7"></use>
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <use id="add" fill="#75A2B2" fill-rule="nonzero" opacity="0.802850632" xlink:href="#path-9"></use>
+                </g>
+                <g id="Group-12" transform="translate(77.000000, 117.000000)">
+                    <g id="Group-10" transform="translate(19.504287, 73.004325) rotate(-1.000000) translate(-19.504287, -73.004325) translate(0.504287, 54.004325)">
+                        <path d="M32.3796005,4.54747351e-13 L24.2145614,7.78857422 L29.5916366,12.6368408 C35.163414,7.34289551 37.9493026,4.69592285 37.9493026,4.69592285 C37.9493026,4.69592285 36.0927352,3.13061523 32.3796005,4.54747351e-13 Z" id="Path-5" fill="#00223D"></path>
+                        <path d="M24.2145614,7.78857422 L29.5916366,12.6368408 L29.9663062,15.7815742 C17.1050815,29.6362794 10.4726762,36.7555493 10.0733346,37.144179 L10.0627059,37.1542969 C9.65836497,37.5263501 5.19676432,37.4484725 2.67769618,35.2895508 C0.158628047,33.130629 0.138731326,28.717558 0.525840714,28.3081055 C0.783913639,28.0351371 7.50974372,21.1952933 20.7033309,7.78857422 L20.7033309,7.78857422 L24.2145614,7.78857422 Z" id="Combined-Shape" fill="url(#linearGradient-11)"></path>
+                    </g>
+                    <g id="Group-11" transform="translate(24.999886, 0.000000)">
+                        <circle id="Oval" stroke="#00223D" stroke-width="1.5" fill-opacity="0.284582605" fill="#1FA7D2" cx="32.25" cy="32.25" r="32.25"></circle>
+                        <path d="M32.8168945,6 C27.0509854,6.08774634 21.8600674,7.89487525 17.2441406,11.4213867 C12.6282138,14.9478982 9.38016693,19.5880349 7.5,25.3417969" id="Path-4" stroke="#FFFFFF" stroke-width="4.5" opacity="0.800525484" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

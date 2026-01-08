@@ -1,0 +1,55 @@
+﻿<div class="card @_bClass @_bColor">
+    <div class="card-body">
+        <h5 class="card-title">
+            @if (!string.IsNullOrEmpty(BreadCrumbParent))
+            {
+                <BreadCrumb ParentString="@BreadCrumbParent" Title="@Title" />
+            }
+            else
+            {
+                @Title
+            }
+        </h5>
+        <p class="card-subtitle">
+            @SubTitle
+        </p>
+        @if (ChildContent != null)
+        {
+            <div class="mt-3">
+                @ChildContent
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string SubTitle { get; set; } = string.Empty;
+
+    [Parameter]
+    public string BorderDirection { get; set; } = "top";
+
+    [Parameter]
+    public string BorderColor { get; set; } = "primary";
+
+    [Parameter]
+    public string BreadCrumbParent { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    private string _bClass => $"{BorderDirection.ToLower()}-border";
+    private string _bColor => $"border-{BorderColor.ToLower()}";
+
+    private async Task OnClickHandler()
+    {
+        await OnClick.InvokeAsync();
+    }
+
+}

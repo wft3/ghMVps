@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/.vscode
+/src/Api/bin
+/src/Api/obj
+/src/Dashboard/bin
+/src/Dashboard/obj
+/src/mvps-plus.AppHost/bin
+/src/mvps-plus.AppHost/obj
+/src/mvps-plus.ServiceDefaults/bin
+/src/mvps-plus.ServiceDefaults/obj
+/src/Common/bin
+/src/Common/obj

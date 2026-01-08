@@ -1,0 +1,103 @@
+﻿@page "/administration/usermanagement/users"
+@using Dashboard.Components.UI.Tables.Models
+@rendermode InteractiveServer
+
+<div class="row">
+    <div class="col">
+        Load Time: @GetDuration().TotalMilliseconds ms
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <Card Title="Users" SubTitle="Filter users by program/jurisdiction/event code, or search by sams id or cdc navigator user id.">
+            <EditForm method="post" Model="SearchCriteria" OnValidSubmit="@Submit" FormName="UserSearchForm" class="d-flex justify-content-center g-3">
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-evenly">
+                        <InputText class="form-control m-2" @bind-Value="SearchCriteria!.UserIdOrName" placeholder="Search UserId/SAMS Id or Name" />
+                        <InputSelect class="form-select m-2" @bind-Value="SearchCriteria!.Program">
+                            <option value="">Select Program</option>
+                            <option value="Program 1">Program 1</option>
+                            <option value="Program 2">Program 2</option>
+                            <option value="Program 3">Program 3</option>
+                        </InputSelect>
+                        <InputSelect class="form-select m-2" @bind-Value="SearchCriteria!.Jurisdiction">
+                            <option value="">Select Jurisdiction</option>
+                            <option value="Program 1">Jurisdiction 1</option>
+                            <option value="Program 2">Jurisdiction 2</option>
+                            <option value="Program 3">Jurisdiction 3</option>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fa fa-search me-1" aria-hidden="true"></i> Search
+                    </button>
+                    <button class="btn btn-outline-danger" @onclick="Reset">
+                        <i class="fa fa-rotate-left" aria-hidden="true"></i> Reset
+                    </button>
+                </div>
+            </EditForm>
+        </Card>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col">
+        <Card BreadCrumbParent="Admin" Title="User Management" SubTitle="@(users != null && users.Any() ? $"Total Users: {users.Count()}" : "Total Users: 0")">
+            <AdvancedDataTable Data="users" Columns="_userColumns" IsLoaded="isLoaded" />
+        </Card>
+    </div>
+</div>
+
+@code {
+    private void SetColumns()
+    {
+        _userColumns = new List<ColumnDefinition<User>>
+        {
+            new()
+            {
+                PropertyName = nameof(User.AccountIdentifier),
+                DisplayName = "User Id",
+                SortExpression = p => p.AccountIdentifier
+            },
+            new()
+            {
+                PropertyName = nameof(User.Email),
+                DisplayName = "Email",
+                SortExpression = p => p.Email,
+                CellTemplate = p => @<a href="mailto:@p.Email">@p.Email</a>
+            },
+            new()
+            {
+                PropertyName = nameof(User.FirstName),
+                DisplayName = "First Name",
+                SortExpression = p => p.FirstName
+            },
+            new()
+            {
+                PropertyName = nameof(User.LastName),
+                DisplayName = "Last Name",
+                SortExpression = p => p.LastName
+            },
+            new()
+            {
+                PropertyName = nameof(User.UserType),
+                DisplayName = "User Type",
+                SortExpression = p => p.UserType
+            },
+            new()
+            {
+                PropertyName = nameof(User.IsActive),
+                DisplayName = "Status",
+                SortExpression = p => p.IsActive,
+                CellTemplate = p => @<span class="badge @(p.IsActive ? "bg-success" : "bg-secondary")">@(p.IsActive ? "Active" : "Deactivated")</span>
+            },
+            new()
+            {
+                PropertyName = "Impersonate",
+                DisplayName = "Actions",
+                //SortExpression = p => p.IsActive,
+                CellTemplate = p => @<button class="btn btn-sm btn-outline-primary" ><i class="fa fa-user-ninja m-1"></i> Impersonate</button>
+            },
+        };
+    }
+}

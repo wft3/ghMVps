@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="48px" viewBox="0 0 220 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sidebar-top</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="220" height="48"></rect>
+    </defs>
+    <g id="views" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sidebar-top">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#122D3C" xlink:href="#path-1"></use>
+            <g id="Group-23" mask="url(#mask-2)">
+                <g transform="translate(0.000000, 1.000000)">
+                    <rect id="Rectangle" fill="#122D3C" x="0" y="0" width="220" height="48"></rect>
+                    <polygon id="Path-18" fill="#0E222E" points="178 0 173.421875 48 219.093023 48 196.257449 0"></polygon>
+                    <polygon id="Path-19" fill="#367F6A" points="94.8837209 -3.42942728e-15 119.44186 34 144 0"></polygon>
+                    <path d="M139.549939,0 C139.549939,0 128.010037,16 104.930233,48 L139.549939,48 L148.465116,0 C142.521665,0 139.549939,0 139.549939,0 Z" id="Path-20" fill="#134C3C"></path>
+                    <path d="M17.0794046,0 C17.0794046,0 25.8978977,16 43.5348837,48 L0,48 L0,0 C11.3862698,0 17.0794046,0 17.0794046,0 Z" id="Path-14" fill="#0E222E"></path>
+                    <polygon id="Path-16" fill="#0D2430" transform="translate(87.439941, 24.000000) scale(-1, -1) translate(-87.439941, -24.000000) " points="93.234375 0 72 48 97.0263672 48 102.879883 0"></polygon>
+                    <polygon id="Path-16" fill="#117899" points="42.8463989 0 13 48 73.2790698 48 55.7875304 0"></polygon>
+                    <polygon id="Path-16" fill="#0D2430" points="167.234375 0 146 48 171.026367 48 176.879883 0"></polygon>
+                    <polygon id="Path-16" fill="#117899" transform="translate(186.652230, 24.000000) scale(1, -1) translate(-186.652230, -24.000000) " points="165.025391 0 165.025391 48 208.27907 48 173.421875 0"></polygon>
+                </g>
+            </g>
+            <rect id="shadow-bar" fill="#0F2633" mask="url(#mask-2)" x="0" y="47" width="220" height="1"></rect>
+            <rect id="shadow-bar" fill="#122D3C" mask="url(#mask-2)" x="0" y="0" width="220" height="8"></rect>
+            <rect id="shadow-bar" fill="#0D2430" mask="url(#mask-2)" x="0" y="7" width="220" height="1"></rect>
+        </g>
+    </g>
+</svg>

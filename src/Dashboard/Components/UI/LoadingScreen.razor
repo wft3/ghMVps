@@ -1,0 +1,27 @@
+﻿@if(isLoaded)
+{
+    @ChildContent
+}
+else
+{
+    <div class="loadScreen">
+        <div class="mud-wasm"></div>
+        <div class="mud-wasm" style="animation-direction:alternate-reverse;animation-duration:4s;"></div>
+        <div class="mud-wasm-cont">
+            <h1>MVPS+</h1>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+    
+    bool isLoaded = false;
+
+    protected override Task OnInitializedAsync()
+    {
+        isLoaded = true;
+        return base.OnInitializedAsync();
+    }
+}

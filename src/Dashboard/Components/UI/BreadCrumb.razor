@@ -1,0 +1,19 @@
+﻿<div class="mvps-breadcrumbs">
+    <span>@ParentString / </span>
+    <span class="mvps-breadcrumbs-title">@Title</span>
+    @if (!string.IsNullOrEmpty(HighlightedId))
+    {
+        <span class="mvps-breadcrumbs-title">: @HighlightedId</span>
+    }
+</div>
+@code {
+    [Parameter]
+    public string ParentString { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public string HighlightedId { get; set; } = string.Empty;
+}
+

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/Api/Api.csproj" Id="a1c731db-ce5b-40d4-ad8b-814e699b24f7" />
+  <Project Path="src/Common/Common.csproj" />
+  <Project Path="src/Dashboard/Dashboard.csproj" Id="a3558d59-8773-4a74-8325-1ee87a89f55f" />
+  <Project Path="src/mvps-plus.AppHost/mvps-plus.AppHost.csproj" Id="4942e7a2-1334-4e61-8b8b-d48de177c106" />
+  <Project Path="src/mvps-plus.ServiceDefaults/mvps-plus.ServiceDefaults.csproj" />
+</Solution>

@@ -1,0 +1,56 @@
+﻿@import 'variables.scss';
+
+.card {
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: #343a40;
+}
+
+.card-primary {
+    border-top: 3px solid $navy-b0;
+}
+
+.card-success {
+    border-top: 3px solid $emer-b0;
+}
+
+.card-warning {
+    border-top: 3px solid $gold-b0;
+}
+
+.card-info {
+    border-top: 3px solid $azur-b0;
+}
+
+.card-danger {
+    border-top: 3px solid $rose-b0;
+}
+
+
+.card-hover {
+    transition: box-shadow .2s ease-in-out, transform .3s ease-in-out;
+}
+
+.canMove {
+    cursor: move;
+}
+
+.top-border {
+    border-width: 5px 2px 2px 2px;
+}
+
+.right-border {
+    border-width: 2px 5px 2px 2px;
+}
+
+.left-border {
+    border-width: 2px 2px 2px 5px;
+}
+
+.bottom-border {
+    border-width: 2px 2px 5px 2px;
+}
+
+.border-primary {
+    border-color: $navy-b0 !important; /*$navy-b0*/
+}

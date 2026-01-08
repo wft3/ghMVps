@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="@ColorTheme">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <ResourcePreloader />
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="@Assets["css/app.min.css"]" />
+    <link rel="stylesheet" href="@Assets["Dashboard.styles.css"]" />
+    <script src="https://kit.fontawesome.com/7ed114479a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="@Assets["lib/bootstrap/dist/js/bootstrap.min.js"]"></script>
+    <ImportMap />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet @rendermode="new InteractiveServerRenderMode(false)" />
+</head>
+
+<body>
+    <Routes @rendermode="new InteractiveServerRenderMode(false)" />
+    <ReconnectModal />
+    
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+</body>
+</html>

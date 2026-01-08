@@ -1,0 +1,15 @@
+﻿@import 'variables.scss';
+
+.mvps-breadcrumbs span {
+    font-size: 15px;
+    font-weight: 600;
+    color: $navy-d1;
+}
+
+    .mvps-breadcrumbs span a:link {
+        color: $navy-d1;
+    }
+
+.mvps-breadcrumbs .mvps-breadcrumbs-title {
+    color: $ambe-d1;
+}

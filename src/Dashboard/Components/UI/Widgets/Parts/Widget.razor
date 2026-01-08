@@ -1,0 +1,67 @@
+﻿
+<div class="@clsSize py-2">
+    <div class="card @clsCardType card-hover">
+        <div class="card-body">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column justify-content-start">
+                    <h5 class="card-title canMove">
+                        @Title
+                    </h5>
+                    <small class="text-sm text-muted">
+                        @SubTitle
+                    </small>
+                </div>
+                <Menu CurrentSize="@Size" OnSizeChange="@ChangeSize" AllowabledSizes="@AllowableSizes" />
+            </div>
+            @ChildContent
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public string CardType { get; set; } = "primary";
+
+    [Parameter]
+    public string Size { get; set; } = "col";
+    [Parameter]
+    public string AllowableSizes { get; set; } = "Extra Small,Small,Medium,Large,Extra Large";
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public string SubTitle { get; set; } = string.Empty;
+
+    private string clsSize = "col";
+    private string clsCardType = "card-primary";
+
+    protected override void OnInitialized()
+    {
+        clsCardType = $"card-{CardType}";
+        SetSize();
+    }
+
+    private void SetSize()
+    {
+        clsSize = Size switch
+        {
+            "Extra Small" => "col-2",
+            "Small" => "col-4",
+            "Medium" => "col-6",
+            "Large" => "col-8",
+            "Extra Large" => "col-12",
+            _ => "col"
+        };
+    }
+
+    void ChangeSize(string size)
+    {
+        Size = size;
+        SetSize();
+    }
+
+}

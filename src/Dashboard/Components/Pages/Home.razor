@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<PageTitle>MVPS (Dashboard)</PageTitle>
+
+<div class="row">
+    <div class="d-flex justify-content-end me-auto">
+        <button class="btn btn-outline-primary btn-sm">
+            <i class="fa fa-gear fa-spin fa-lg"></i> Widgets
+        </button>
+    </div>
+</div>
+<div class="row">
+    <WidgetStatuses />
+    <WidgetMessagesReceived />
+    <WidgetErrorsAndWarnings />
+    <WidgetMessageVolume />
+    <WidgetTransactions />
+</div>

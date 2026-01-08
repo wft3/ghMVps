@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+		<SassCompilerIncludeRuntime>true</SassCompilerIncludeRuntime>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Common\Common.csproj" />
+		<ProjectReference Include="..\mvps-plus.ServiceDefaults\mvps-plus.ServiceDefaults.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Components\Pages\Cases\" />
+		<Folder Include="Components\Pages\DeleteACase\" />
+		<Folder Include="Components\Pages\Jurisdictions\" />
+		<Folder Include="Components\Pages\Programs\" />
+		<Folder Include="wwwroot\css\" />
+		<Folder Include="wwwroot\scripts\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.SassCompiler" Version="1.94.2" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+	</ItemGroup>
+
+</Project>

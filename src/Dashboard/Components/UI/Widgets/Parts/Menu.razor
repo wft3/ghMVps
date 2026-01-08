@@ -1,0 +1,25 @@
+﻿<div class="ms-auto p-2 dropdown dropstart">
+    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-sharp fa-solid fa-ellipsis pointer"></i>
+    </button>
+    <ul class="dropdown-menu">
+        @foreach (var size in AllowabledSizes.Split(','))
+        {
+            var activeClass = CurrentSize.Equals(size, StringComparison.InvariantCultureIgnoreCase) ? "active" : "";
+            <li>
+                <a class="dropdown-item @activeClass" @onclick="@(() => OnSizeChange.InvokeAsync(size))">
+                    <i class="fa-sharp fa-solid fa-arrow-down-small-big"></i> @size
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+@code {
+    [Parameter]
+    public string CurrentSize { get; set; } = "Small";
+    [Parameter]
+    public EventCallback<string> OnSizeChange { get; set; }
+    [Parameter]
+    public string AllowabledSizes { get; set; } = string.Empty;
+}

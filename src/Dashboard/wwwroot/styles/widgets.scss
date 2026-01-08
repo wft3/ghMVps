@@ -1,0 +1,63 @@
+﻿@import 'variables.scss';
+
+.pointer {
+    cursor: pointer;
+}
+
+.fa-2xl {
+    vertical-align: -0.45em !important;
+    font-size: 2.2em !important;
+}
+/*Widget Statuses Classes*/
+.circular {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    &.success {
+        background: $emer-l5;
+        border: solid 1px $emer-d5;
+
+        & i {
+            color: $emer-b0;
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    &.danger {
+        background: $crim-l5;
+        border: solid 1px $crim-d5;
+
+        & i {
+            color: $crim-b0;
+            top: 7px;
+            left: 7px;
+        }
+    }
+
+    &.warning {
+        background: $ambe-l5;
+        border: solid 1px $ambe-d5;
+
+        & i {
+            color: $ambe-b0;
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    &.info {
+        background: $azur-l5;
+        border: solid 1px $azur-d5;
+
+        & i {
+            color: $azur-b0;
+            top: 5px;
+            left: 5px;
+        }
+    }
+}
+
+
+/*END Widget Statuses Classes*/

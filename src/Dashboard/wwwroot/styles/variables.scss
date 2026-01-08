@@ -1,0 +1,179 @@
+﻿/*
+  Color Palette
+
+  This color palette is designed to maintain consistency and visual harmony across all design and branding materials. 
+  The palette is divided into distinct color families, each representing a core component of our brand identity:
+
+  - Slate
+  - Navy
+  - Gold
+  - Amber
+  - Rose
+  - Crimson
+  - Emerald
+  - Azure
+  - Teal
+  - Violet
+
+  Each color family is anchored by a **Base Color** (denoted by `b0`), which serves as the central tone. 
+  Lighter (`l1` to `l5`) and darker (`d1` to `d5`) variants of each base color provide flexibility in design 
+  while maintaining brand integrity.
+
+  **Naming Convention:**
+  - **Base Color**: `b0` (e.g., `ambe-b0` for the Amber base color).
+  - **Light Variants**: `l1` to `l5`, where `l1` is closer to the base and `l5` is the lightest (e.g., `emer-l3`).
+  - **Dark Variants**: `d1` to `d5`, where `d1` is closer to the base and `d5` is the darkest (e.g., `crim-d4`).
+
+  This structure ensures that colors are easy to identify and apply across all digital, print, and branding materials, 
+  supporting a cohesive and recognizable visual identity.
+*/
+
+// Slate Color Family
+$slat-d5: #212323;
+$slat-d4: #3D3F40;
+$slat-d3: #595B5D;
+$slat-d2: #75777B;
+$slat-d1: #909298;
+$slat-b0: #ACAEB5;
+$slat-l1: #C8CAD2;
+$slat-l2: #D7D9E0;
+$slat-l3: #E6E8ED;
+$slat-l4: #EBEDF1;
+$slat-l5: #F0F1F4;
+
+// Navy Color Family
+$navy-d5: #04090C;
+$navy-d4: #071218;
+$navy-d3: #0B1B24;
+$navy-d2: #0E2430;
+$navy-d1: #122D3C;
+$navy-b0: #0C364C;
+$navy-l1: #124661;
+$navy-l2: #416B81;
+$navy-l3: #7190A0;
+$navy-l4: #A0B5C0;
+$navy-l5: #D0DADF;
+
+// Gold Color Family
+$gold-d5: #2B2403;
+$gold-d4: #564906;
+$gold-d3: #806D08;
+$gold-d2: #AB920B;
+$gold-d1: #D6B60E;
+$gold-b0: #F0CE1B;
+$gold-l1: #F2D640;
+$gold-l2: #F5DE66;
+$gold-l3: #F7E68C;
+$gold-l4: #FAEFB3;
+$gold-l5: #FCF7D9;
+
+// Amber Color Family
+$ambe-d5: #261B06;
+$ambe-d4: #4C350D;
+$ambe-d3: #725013;
+$ambe-d2: #986A1A;
+$ambe-d1: #BE8520;
+$ambe-b0: #DB9B2B;
+$ambe-l1: #E1AB4D;
+$ambe-l2: #E7BC71;
+$ambe-l3: #EDCD94;
+$ambe-l4: #F3DDB8;
+$ambe-l5: #F9EEDB;
+
+// Rose Color Family
+$rose-d5: #270512;
+$rose-d4: #4E0A24;
+$rose-d3: #740E37;
+$rose-d2: #9B1349;
+$rose-d1: #C2185B;
+$rose-b0: #D81B60;
+$rose-l1: #E91E63;
+$rose-l2: #ED4B82;
+$rose-l3: #F278A1;
+$rose-l4: #F6A5C1;
+$rose-l5: #FBD2E0;
+
+// Crimson Color Family
+$crim-d5: #1F0303;
+$crim-d4: #3F0606;
+$crim-d3: #5E090A;
+$crim-d2: #7E0C0D;
+$crim-d1: #9D0F10;
+$crim-b0: #C51315;
+$crim-l1: #D04243;
+$crim-l2: #D96869;
+$crim-l3: #E38E8E;
+$crim-l4: #ECB3B4;
+$crim-l5: #F6D9D9;
+
+// Emerald Color Family
+$emer-d5: #081411;
+$emer-d4: #112821;
+$emer-d3: #193B32;
+$emer-d2: #224F42;
+$emer-d1: #2A6353;
+$emer-b0: #367F6A;
+$emer-l1: #429B81;
+$emer-l2: #68AF9A;
+$emer-l3: #8EC3B3;
+$emer-l4: #B3D7CD;
+$emer-l5: #D9EBE6;
+
+// Azure Color Family
+$azur-d5: #03181F;
+$azur-d4: #07303D;
+$azur-d3: #0A485C;
+$azur-d2: #0E607A;
+$azur-d1: #117899;
+$azur-b0: #1594BC;
+$azur-l1: #19AFE0;
+$azur-l2: #47BFE6;
+$azur-l3: #75CFEC;
+$azur-l4: #A3DFF3;
+$azur-l5: #D1EFF9;
+
+// Teal Color Family
+$teal-d5: #001E21;
+$teal-d4: #003C43;
+$teal-d3: #005B64;
+$teal-d2: #007986;
+$teal-d1: #0097A7;
+$teal-b0: #00ACC1;
+$teal-l1: #00BCD4;
+$teal-l2: #33C9DD;
+$teal-l3: #66D7E5;
+$teal-l4: #99E4EE;
+$teal-l5: #CCF2F6;
+
+// Violet Color Family
+$viol-d5: #280A50;
+$viol-d4: #320C64;
+$viol-d3: #3F0F7D;
+$viol-d2: #4F139C;
+$viol-d1: #6318C3;
+$viol-b0: #701FD7;
+$viol-l1: #8C40E0;
+$viol-l2: #A66FE6;
+$viol-l3: #C19FEC;
+$viol-l4: #DCCFEF;
+$viol-l5: #F3EFF6;
+
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+$font-size-sub-1: 1.125rem;
+$font-size-breadcrumb: 0.9375rem;
+$font-size-caption: 0.75rem;
+$font-size-overline: 0.625rem;
+$font-size-body: 0.875rem;

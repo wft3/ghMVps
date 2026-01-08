@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Navigation
+@inject ILogger<RoleBasedAuthorizationComponent> Logger
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public string? RequiredRole { get; set; }
+
+    [Parameter]
+    public string? RequiredPolicy { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ValidateAuthorization();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await ValidateAuthorization();
+    }
+
+    private async Task ValidateAuthorization()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (!user.Identity?.IsAuthenticated ?? true)
+        {
+            Logger.LogWarning("Unauthorized access attempt - user not authenticated");
+            Navigation.NavigateTo("/login", true);
+            return;
+        }
+
+        if (!string.IsNullOrEmpty(RequiredRole) && !user.IsInRole(RequiredRole))
+        {
+            Logger.LogWarning("Unauthorized access attempt - user lacks required role: {Role}", RequiredRole);
+            Navigation.NavigateTo("/unauthorized", true);
+        }
+    }
+}
+
+@if (ChildContent != null)
+{
+    @ChildContent
+}

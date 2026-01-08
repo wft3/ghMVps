@@ -1,0 +1,182 @@
+﻿@typeparam TItem
+
+<div class="d-flex">
+    <div class="p-2 flex-grow-1">
+        @if (_sortColumns.Any())
+        {
+            <small class="text-muted">
+                Sorted by:
+                @foreach (var sortColumn in _sortColumns)
+                {
+                    <span class="badge bg-secondary me-1">
+                        @sortColumn.Column?.DisplayName
+                        <i class="fa @(sortColumn.IsDescending ? "fa-sort-down" : "fa-sort-up")"></i>
+                        <button class="btn-close btn-close-white ms-1" style="font-size: 0.5rem;" @onclick="@(() => RemoveSort(sortColumn))"></button>
+                    </span>
+                }
+                <button class="btn btn-sm btn-link p-0" @onclick="ClearSort"><small>Clear All</small></button>
+            </small>
+        }
+    </div>
+    <div class="p-1">
+        <div class="btn-group" aria-label="Table buttons to refresh, export or select columns">
+            @if (CanRefresh)
+            {
+                <button type="button" class="btn btn-sm btn-outline-warning">
+                    <i class="fa fa-refresh text-warning m-1"></i> Refresh
+                </button>
+
+            }
+            @if (CanExport)
+            {
+                <button type="button" class="btn btn-sm btn-outline-primary">
+                    <i class="fa fa-download text-primary m-1"></i> Export
+                </button>
+
+            }
+            @if (CanSelectColumns)
+            {
+                <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="offcanvas" href="#offCanvasColumns">
+                    <i class="fas fa-columns text-info m-1"></i>Columns
+                </button>
+            }
+        </div>
+        @if (HeaderButtonContent != null)
+        {
+            @HeaderButtonContent
+        }
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                @foreach (var column in VisibleColumns)
+                {
+                    @if (column.SortExpression == null)
+                    {
+                        <th>@column.DisplayName</th>
+                    }
+                    else
+                    {
+                        <th @onclick="@(() => HandleSort(column))"
+                            style="cursor: pointer; user-select: none;"
+                            class="@GetHeaderClass(column)">
+                            @column.DisplayName
+                            @{
+                                var sortInfo = _sortColumns.FirstOrDefault(s => s.Column == column);
+                                if (sortInfo != null)
+                                {
+                                    <span class="ms-1">
+                                        <i class="fas @(sortInfo.IsDescending ? "fa-sort-down" : "fa-sort-up")"></i>
+                                        @if (_sortColumns.Count > 1)
+                                        {
+                                            <sup class="text-primary">@(_sortColumns.IndexOf(sortInfo) + 1)</sup>
+                                        }
+                                    </span>
+                                }
+                                else
+                                {
+                                    <i class="fas fa-sort text-muted opacity-25"></i>
+                                }
+                            }
+                        </th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (pagedItems?.Any() == true)
+            {
+                @foreach (var item in pagedItems)
+                {
+                    <tr>
+                        @foreach (var column in VisibleColumns)
+                        {
+                            <td>
+                                @if (column.CellTemplate != null)
+                                {
+                                    @column.CellTemplate(item)
+                                }
+                                else
+                                {
+                                    @column.GetValue(item)
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="@VisibleColumns.Count()" class="text-center text-muted">
+                        No data available
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (totalPages > 1)
+    {
+        <div class="d-flex justify-content-start mb-3">
+            @if (CurrentPage == 1)
+            {
+                <button class="btn btn-sm btn-outline-primary disabled m-1">First</button>
+                <button class="btn btn-sm btn-outline-primary disabled m-1">Prev</button>
+            }
+            else
+            {
+
+                <button class="btn btn-sm btn-outline-primary m-1" @onclick="() => GoToPage(1)">First</button>
+                <button class="btn btn-sm btn-outline-primary m-1" @onclick="PreviousPage">Prev</button>
+            }
+            @foreach (var pageNumber in Enumerable.Range(1, totalPages).Skip(CurrentPage-3))
+            {
+                var visiblePages = (CurrentPage == 1 || CurrentPage == 2) ? 5 : CurrentPage + 2;
+                
+                if (CurrentPage == pageNumber)
+                {
+                    <button class="btn btn-sm btn-outline-primary disabled m-1">@pageNumber</button>
+                }
+                else if (pageNumber <= visiblePages)
+                {
+                    <button class="btn btn-sm btn-outline-primary m-1" @onclick="() => GoToPage(pageNumber)">@pageNumber</button>
+                }
+            }
+            @if (CurrentPage == totalPages)
+            {
+                <button class="btn btn-sm btn-outline-primary disabled m-1">Next</button>
+                <button class="btn btn-sm btn-outline-primary disabled m-1">Last</button>
+            }
+            else
+            {
+                <button class="btn btn-sm btn-outline-primary m-1" @onclick="NextPage">Next</button>
+                <button class="btn btn-sm btn-outline-primary m-1" @onclick="() => GoToPage(totalPages)">Last</button>
+            }
+        </div>
+    }
+</div>
+
+
+<!-- Column OffCanvas -->
+<div class="offcanvas offcanvas-end _columnSelectorVisible" tabindex="-1" id="offCanvasColumns" aria-labelledby="offCanvasColumns">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offCanvasColumnsLabel">Select Columns</h5>
+        <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa fa-xmark"></i> Close
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+            @foreach (var column in _allColumns)
+            {
+                <li class="list-group-item">
+                    <VisibleCheckbox @bind-Value="column.IsVisible" Label="@column.DisplayName" @ValidationFor="@(() => column.IsVisible)" />
+                </li>
+            }
+        </ul>
+
+    </div>
+</div>
+
